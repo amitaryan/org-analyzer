@@ -23,7 +23,7 @@ public class MainClass {
         var underpaidManagers = salaryViolations.stream()
                 .filter(SalaryViolation::isUnderpaid)
                 .toList();
-        System.out.println("Total underpaid Managers: " + underpaidManagers.size());
+        System.out.println("Total overpaid Managers: " + underpaidManagers.size());
         underpaidManagers.forEach(System.out::println);
 
         System.out.println("\n\nManager's Salary Violations where they are earning more:");
